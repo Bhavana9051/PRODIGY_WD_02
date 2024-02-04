@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #000080, #98FF98, #E6E6FA, #87CEEB);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s infinite;
+}
+
+@keyframes gradientAnimation{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.timer-box{
+    background-color: #bd65d6;
+    width: 40%;
+    min-width: 500px;
+    max-width: 600px;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 7px 8px 9px rgba(33,20,77, 2);
+    padding: 20px 0px;
+    padding-bottom: 35px;
+}
+
+@media (max-width: 600px) {
+    .timer-box {
+        width: 80%;
+        min-width: auto;
+    }
+}
+
+.timer-display{
+    background-color: #21037e;
+    color: white;
+    width: 50%;
+    left: 27%;
+    padding: 20px 0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: monospace;
+    font-weight: 100;
+    font-size: x-large;
+    text-align: center;
+    text-decoration: dashed;
+    border-radius: 7px;
+    box-shadow: 2px 5px 8px rgba(0,20,10, 0.98);
+}
+
+.buttons{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    font-size: large;
+}
+
+.buttons button{
+    width: 120px;   
+    height: 50px;
+    background-color: #000080;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    border-radius: 7px;
+    box-shadow: 2px 1px 3px rgba(0,20,10, 0.98);
+    outline: navajowhite;
+}
+
+.buttons button:nth-last-child(2){
+    background-color: goldenrod;
+}
+.buttons button:nth-last-child(1){
+    background-color: rgb(195, 45, 45);
+}
+.buttons button:nth-last-child(3){
+    background-color: green;
+}
+
+.buttons button:hover{
+    background-color: rgb(129, 30, 79);
+    text-decoration: underline;
+}
+
